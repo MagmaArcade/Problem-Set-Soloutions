@@ -10,10 +10,15 @@ namespace TallyMajorityElement
         List<int> IdentifiedElementsCounter = new List<int>();
         int result;
 
-        public Func(int input)
+        public Func()
         {
-             // this loop i used to enter all of the elements into the array
-            for (int a = 0; a < input; a++)
+            Console.WriteLine("This program is used to identify the number that occurs most frequent");
+            Console.WriteLine("How many number would you like to enter?");
+            int NumOfElements = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+
+            Console.WriteLine("Enter each number");
+            for (int a = 0; a < NumOfElements; a++)
             {
                 ElementList.Add(Convert.ToInt32(Console.ReadLine()));
             }

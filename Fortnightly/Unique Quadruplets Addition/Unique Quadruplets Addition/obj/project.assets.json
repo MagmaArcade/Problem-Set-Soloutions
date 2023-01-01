@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Magma-365-Coding-Challenge\\Daily\\Tally Majority Element\\Tally Majority Element\\Tally Majority Element.csproj",
-      "projectName": "Tally Majority Element",
-      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Magma-365-Coding-Challenge\\Daily\\Tally Majority Element\\Tally Majority Element\\Tally Majority Element.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Magma-365-Coding-Challenge\\Fortnightly\\Unique Quadruplets Addition\\Unique Quadruplets Addition\\Unique Quadruplets Addition.csproj",
+      "projectName": "Unique Quadruplets Addition",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Magma-365-Coding-Challenge\\Fortnightly\\Unique Quadruplets Addition\\Unique Quadruplets Addition\\Unique Quadruplets Addition.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Magma-365-Coding-Challenge\\Daily\\Tally Majority Element\\Tally Majority Element\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Magma-365-Coding-Challenge\\Fortnightly\\Unique Quadruplets Addition\\Unique Quadruplets Addition\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
