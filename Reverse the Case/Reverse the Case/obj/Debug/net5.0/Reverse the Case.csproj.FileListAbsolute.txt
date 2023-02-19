@@ -1,0 +1,16 @@
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\bin\Debug\net5.0\Reverse the Case.exe
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\bin\Debug\net5.0\Reverse the Case.deps.json
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\bin\Debug\net5.0\Reverse the Case.runtimeconfig.json
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\bin\Debug\net5.0\Reverse the Case.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\bin\Debug\net5.0\Reverse the Case.dll
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\bin\Debug\net5.0\Reverse the Case.pdb
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\obj\Debug\net5.0\Reverse the Case.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\obj\Debug\net5.0\Reverse the Case.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\obj\Debug\net5.0\Reverse the Case.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\obj\Debug\net5.0\Reverse the Case.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\obj\Debug\net5.0\Reverse the Case.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\obj\Debug\net5.0\Reverse the Case.dll
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\obj\Debug\net5.0\refint\Reverse the Case.dll
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\obj\Debug\net5.0\Reverse the Case.pdb
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\obj\Debug\net5.0\Reverse the Case.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Reverse the Case\Reverse the Case\obj\Debug\net5.0\ref\Reverse the Case.dll
