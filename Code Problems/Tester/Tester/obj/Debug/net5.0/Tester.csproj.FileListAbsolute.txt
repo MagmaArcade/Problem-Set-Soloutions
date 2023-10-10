@@ -14,3 +14,19 @@ C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Tester\Tester\obj\Debu
 C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Tester\Tester\obj\Debug\net5.0\Tester.pdb
 C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Tester\Tester\obj\Debug\net5.0\Tester.genruntimeconfig.cache
 C:\Users\User\Documents\GitHub\Magma-365-Coding-Challenge\Tester\Tester\obj\Debug\net5.0\ref\Tester.dll
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\obj\Debug\net5.0\Tester.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\obj\Debug\net5.0\Tester.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\obj\Debug\net5.0\Tester.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\obj\Debug\net5.0\Tester.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\obj\Debug\net5.0\Tester.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\obj\Debug\net5.0\Tester.dll
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\obj\Debug\net5.0\refint\Tester.dll
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\obj\Debug\net5.0\Tester.pdb
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\bin\Debug\net5.0\Tester.exe
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\bin\Debug\net5.0\Tester.deps.json
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\bin\Debug\net5.0\Tester.runtimeconfig.json
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\bin\Debug\net5.0\Tester.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\bin\Debug\net5.0\Tester.dll
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\bin\Debug\net5.0\Tester.pdb
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\obj\Debug\net5.0\Tester.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\Problem-Set-Soloutions\Code Problems\Tester\Tester\obj\Debug\net5.0\ref\Tester.dll

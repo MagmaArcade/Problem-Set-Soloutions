@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\GitHub\\Problem-Set-Soloutions\\Tester\\Tester\\Tester.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\Problem-Set-Soloutions\\Code Problems\\Tester\\Tester\\Tester.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\GitHub\\Problem-Set-Soloutions\\Tester\\Tester\\Tester.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\Problem-Set-Soloutions\\Code Problems\\Tester\\Tester\\Tester.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Problem-Set-Soloutions\\Tester\\Tester\\Tester.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Problem-Set-Soloutions\\Code Problems\\Tester\\Tester\\Tester.csproj",
         "projectName": "Tester",
-        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Problem-Set-Soloutions\\Tester\\Tester\\Tester.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Problem-Set-Soloutions\\Code Problems\\Tester\\Tester\\Tester.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Problem-Set-Soloutions\\Tester\\Tester\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Problem-Set-Soloutions\\Code Problems\\Tester\\Tester\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
