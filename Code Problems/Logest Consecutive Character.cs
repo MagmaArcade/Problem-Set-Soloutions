@@ -1,48 +1,48 @@
 // Created By MagmaAracde
 // Date: 9/10/23
 
+using System;
+using System.Text;
+
+
 // This program is used to identify the longest consecutive substring with single character.
-namespace Identify_Longest_Palindromic_Substring
+namespace Identify_Longest_Substring
 {
     public class Longest_Consecutive_Substring
     {
-        public class Longest_Consecutive_Substring
+        public static Tuple<char, int> FindLongestConsecutiveCharacters(string input)
         {
-            ///////////////////////////////////////////////////////////////////////////////////
-            // Original Source Code
-            public static Tuple<char, int> FindLongestConsecutiveCharacters(string input)
+            var maxChar = input[0];
+
+            var max = 1;
+            var current = 1;
+
+            for (var i = 1; i < input.Length; i++)
             {
-                var maxChar = input[0];
-
-                var max = 1;
-                var current = 1;
-
-                for (var i = 1; i < input.Length; i++)
+                if (input[i] == input[i - 1])
                 {
-                    if (input[i] == input[i - 1])
+                    current++;
+                    if (current > max)
                     {
-                        current++;
-                        if (current > max)
-                        {
-                            max = current;
-                            maxChar = input[i];
-                        }
-                    }
-                    else
-                    {
-                        current = 1;
+                        max = current;
+                        maxChar = input[i];
                     }
                 }
-
-                return new Tuple<char, int>(maxChar, max);
+                else
+                {
+                    current = 1;
+                }
             }
-            //////////////////////////////////////////////////////////////////////////////////////
 
-            public static void DuplicateChars()
-            {
-                string input = "abceeca"; // Origional input
+            return new Tuple<char, int>(maxChar, max);
+        }
 
-                // Morphic Relations for Transformed List before Function Call
+        //////////////////////////////////////////////////////////////////////////////////////
+
+
+        public static void DuplicateChars(string input)
+        {
+            // Morphic Relations for Transformed List before Function Call
                 System.Text.StringBuilder updatedString = new System.Text.StringBuilder(input.Length);
 
                 foreach (char c in input)
@@ -55,13 +55,13 @@ namespace Identify_Longest_Palindromic_Substring
 
                 // Get the translated input
                 string translatedinput = updatedString.ToString();
-                // Function call and print for transformed origional list
 
-                Console.WriteLine("output (char, consecutive #): " + FindLongestConsecutiveCharacters(translatedinput));
+                Tuple<char, int> TransformedTuple = FindLongestConsecutiveCharacters(translatedinput);
 
-                // Morphic Relations for Transformed output after Function Call
-                // Function call for origional list
-                Tuple<char, int> originalTuple = FindLongestConsecutiveCharacters(input);
+
+            // Morphic Relations for Transformed output after Function Call
+            // Function call for origional list
+            Tuple<char, int> originalTuple = FindLongestConsecutiveCharacters(input);
 
                 // Multiply 3 to the int value
                 int newNum = (int)(originalTuple.Item2 * 3);
@@ -69,16 +69,30 @@ namespace Identify_Longest_Palindromic_Substring
                 // Creating a new tuple with the updated char value
                 Tuple<char, int> updatedTuple = new Tuple<char, int>(originalTuple.Item1, newNum);
 
-                // print the transformed output
-                Console.WriteLine("output (char, consecutive #): " + updatedTuple);
-            }
-            public static void NumTransform()
+
+
+            Console.WriteLine(FindLongestConsecutiveCharacters(translatedinput));
+            Console.WriteLine(updatedTuple);
+
+            bool areEqual = TransformedTuple.Equals(updatedTuple);
+
+            if (areEqual)
             {
-                string input = "aabbbccd"; // Origional input
+                Console.WriteLine("PASS");
+            }
+            else
+            {
+                Console.WriteLine("FAIL");
+                //Console.WriteLine("output (char, consecutive #): " + FindLongestConsecutiveCharacters(translatedinput));
+                //Console.WriteLine("output (char, consecutive #): " + updatedTuple);
+            }
 
-                // Morphic Relations for Transformed List before Function Call
+        }
+        public static void NumTransform(string input)
+        {
+            // Morphic Relations for Transformed List before Function Call
 
-                int[] numbers = new int[input.Length];
+                char[] newChar = new char[input.Length];
 
                 for (int i = 0; i < input.Length; i++)
                 {
@@ -88,46 +102,66 @@ namespace Identify_Longest_Palindromic_Substring
                     if (currentChar >= 'a' && currentChar <= 'z')
                     {
                         // Map 'a' to 1, 'b' to 2, and so on
-                        numbers[i] = currentChar - 'a' + 1;
+                        newChar[i] = (char)(currentChar - 'a' + '1');
                     }
-                    else
+                    if (currentChar >= '1' && currentChar <= '9')
                     {
-                        // Handle non-alphabet characters (e.g., spaces, punctuation)
-                        numbers[i] = 0; // You can choose another value or behavior
+                        // Map '1' to 'a', '2' to 'b', and so on
+                        newChar[i] = (char)(currentChar - '1' + 'a');
                     }
+
                 }
 
-                string translatedinput = string.Join("", numbers);
+                string translatedinput = string.Join("", newChar);
 
-                Console.WriteLine("output (char, consecutive #): " + FindLongestConsecutiveCharacters(translatedinput));
+                Tuple<char, int> TransformedTuple = FindLongestConsecutiveCharacters(translatedinput);
 
-
-                // Morphic Relations for Transformed output after Function Call
+            // Morphic Relations for Transformed output after Function Call
                 // Function call for origional list
                 Tuple<char, int> originalTuple = FindLongestConsecutiveCharacters(input);
 
-                // Adding 1 to the char value
-                char newChar = (char)(originalTuple.Item1 + 1);
+                char charTransform = originalTuple.Item1;
 
-                // Convert the character to its corresponding number
-                int charAsNumber = originalTuple.Item1 - 'a' + 1;
+                if (originalTuple.Item1 >= 'a' && originalTuple.Item1 <= 'z')
+                {
+                    // Map 'a' to 1, 'b' to 2, and so on
+                    charTransform = (char)(charTransform - 'a' + '1');
+                }
+                else if (originalTuple.Item1 >= '1' && originalTuple.Item1 <= '9')
+                {
+                    // Map '1' to 'a', '2' to 'b', and so on
+                    charTransform = (char)(charTransform - '1' + 'a');
+                }
 
                 // Creating a new tuple with the updated char value
-                Tuple<int, int> updatedTuple = new Tuple<int, int>(charAsNumber, originalTuple.Item2);
+                Tuple<char, int> updatedTuple = new Tuple<char, int>(charTransform, originalTuple.Item2);
 
-                // print the transformed output
-                Console.WriteLine("output (char, consecutive #): " + updatedTuple);
 
-            }
-            public static void Reverse()
+            Console.WriteLine(FindLongestConsecutiveCharacters(translatedinput));
+            Console.WriteLine(updatedTuple);
+
+            bool areEqual = TransformedTuple.Equals(updatedTuple);
+
+            if (areEqual)
             {
-                string input = "aabbbccd"; // Origional input
+                Console.WriteLine("PASS");
+            }
+            else
+            {
+                Console.WriteLine("FAIL");
+                //Console.WriteLine("output (char, consecutive #): " + FindLongestConsecutiveCharacters(translatedinput));
+                //Console.WriteLine("output (char, consecutive #): " + updatedTuple);
+            }
 
-                // Morphic Relations for untransformed List
-                Console.WriteLine("output (char, consecutive #): " + FindLongestConsecutiveCharacters(input));
+
+        }
+        public static void Reverse(string input)
+        {
+            // Morphic Relations for untransformed List
+                Tuple<char, int> TransformedTuple = FindLongestConsecutiveCharacters(input);
 
 
-                // Morphic Relations for transformed List
+            // Morphic Relations for transformed List
                 // Convert the input string to a char array
                 char[] charArray = input.ToCharArray();
 
@@ -141,13 +175,28 @@ namespace Identify_Longest_Palindromic_Substring
                 // Convert the reversed StringBuilder back to a string
                 string translatedinput = reversedStringBuilder.ToString();
 
-                Console.WriteLine("output (char, consecutive #): " + FindLongestConsecutiveCharacters(translatedinput));
-            }
-            public static void CharIncrement()
-            {
-                string input = "aabbbccd"; // Origional input
+                Tuple<char, int> OrigionalTuple = FindLongestConsecutiveCharacters(translatedinput);
 
-                // Morphic Relations for Transformed List before Function Call
+
+            Console.WriteLine(FindLongestConsecutiveCharacters(input));
+            Console.WriteLine(FindLongestConsecutiveCharacters(translatedinput));
+
+            bool areEqual = TransformedTuple.Equals(OrigionalTuple);
+
+            if (areEqual)
+            {
+                Console.WriteLine("PASS");
+            }
+            else
+            {
+                Console.WriteLine("FAIL");
+                //Console.WriteLine("output (char, consecutive #): " + FindLongestConsecutiveCharacters(input));
+                //Console.WriteLine("output (char, consecutive #): " + FindLongestConsecutiveCharacters(translatedinput));
+            }
+        }
+        public static void CharIncrement(string input)
+        {
+            // Morphic Relations for Transformed List before Function Call
                 System.Text.StringBuilder updatedString = new System.Text.StringBuilder(input.Length);
 
                 foreach (char c in input)
@@ -163,12 +212,12 @@ namespace Identify_Longest_Palindromic_Substring
                 string translatedinput = updatedString.ToString();
 
                 // Function call and print for transformed origional list
-                Console.WriteLine("output (char, consecutive #): " + FindLongestConsecutiveCharacters(translatedinput));
+            Tuple<char, int> TransformedTuple = FindLongestConsecutiveCharacters(translatedinput);
 
 
-                // Morphic Relations for Transformed output after Function Call
-                // Function call for origional list
-                Tuple<char, int> originalTuple = FindLongestConsecutiveCharacters(input);
+            // Morphic Relations for Transformed output after Function Call
+            // Function call for origional list
+            Tuple<char, int> originalTuple = FindLongestConsecutiveCharacters(input);
 
                 // Adding 1 to the char value
                 char newChar = (char)(originalTuple.Item1 + 1);
@@ -176,26 +225,54 @@ namespace Identify_Longest_Palindromic_Substring
                 // Creating a new tuple with the updated char value
                 Tuple<char, int> updatedTuple = new Tuple<char, int>(newChar, originalTuple.Item2);
 
-                // print the transformed output
-                Console.WriteLine("output (char, consecutive #): " + updatedTuple);
-            }
 
+            Console.WriteLine(FindLongestConsecutiveCharacters(translatedinput));
+            Console.WriteLine(updatedTuple);
 
+            bool areEqual = TransformedTuple.Equals(updatedTuple);
 
-
-            // Driver Code
-            public static void Main()
+            if (areEqual)
             {
-                Console.WriteLine("This program is used to identify the longest consecutive substring with single character.");
-
-                CharIncrement();
-                Console.WriteLine("");
-                Reverse();
-                Console.WriteLine("");
-                NumTransform();
-                Console.WriteLine("");
-                DuplicateChars();
+                Console.WriteLine("PASS");
             }
+            else
+            {
+                Console.WriteLine("FAIL");
+               // Console.WriteLine("output (char, consecutive #): " + FindLongestConsecutiveCharacters(translatedinput));
+               // Console.WriteLine("output (char, consecutive #): " + updatedTuple);
+            }
+        }
+
+
+
+
+        // Driver Code
+        public static void Main()
+        {
+            Console.WriteLine("This program is used to identify the longest consecutive substring with single character.");
+
+            string input = "aabbbce"; // standard input
+
+            CharIncrement(input);
+            Reverse(input);
+            NumTransform(input);
+            DuplicateChars(input);
+            Console.WriteLine("----------------------------------");
+
+            string input2 = "1334442"; // number input
+
+            CharIncrement(input2);
+            Reverse(input2);
+            NumTransform(input2);
+            DuplicateChars(input2);
+            Console.WriteLine("------------------------------------------");
+
+            string input3 = "b3ee3b"; // mix input
+
+            CharIncrement(input3);
+            Reverse(input3);
+            NumTransform(input3);
+            DuplicateChars(input3);
         }
     }
 }
