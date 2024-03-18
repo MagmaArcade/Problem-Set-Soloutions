@@ -16,7 +16,7 @@ namespace Identify_Longest_Substring
 
             var max = 1;
             var current = 1;
-
+                
             for (var i = 1; i < input.Length; i++)
             {
                 if (input[i] == input[i - 1])
